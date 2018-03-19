@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-// import './List.css';
+import './List.css';
 
 class List extends Component {
   render() {
     const { list, onClick } = this.props;
 
     return (
-      <div>
+      <ul className="vending__list">
         {list.map(item =>
-          <ul key={item.id}>
-            <li
-              onClick={onClick}>{item.name}</li>
-            <li>가격 : {item.price}</li>
-          </ul>
+          <li className="vending__item" key={item.id}>
+            <img src={item.img} alt="" />
+            <span className="beverage__item" onClick={onClick}>{item.name}</span>
+            <span>{item.price} 원</span>
+          </li>
         )}
-      </div>
+      </ul>
     )
   }
 }

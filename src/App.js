@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 import Header from './components/Header';
 import List from './components/List';
 import Input from './components/Input';
@@ -10,21 +11,25 @@ const list = [
     id: 1,
     name: 'Sprite',
     price: 800,
+    img: "http://placehold.it/80X150/cd2"
   },
   {
     id: 2,
     name: 'Coke',
     price: 900,
+    img: "http://placehold.it/80X150/f8a"
   },
   {
     id: 3,
-    name: 'Coffe',
+    name: 'Coffee',
     price: 1000,
+    img: "http://placehold.it/80X150/860"
   },
   {
     id: 4,
     name: 'Water',
     price: 700,
+    img: "http://placehold.it/80X150/324"
   }
 ];
 
