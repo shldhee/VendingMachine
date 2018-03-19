@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import Header from './components/Header';
+import List from './components/List';
+import Input from './components/Input';
+import Insert from './components/Insert';
+import Return from './components/Return';
 
 const list = [
   {
@@ -97,80 +102,6 @@ class App extends Component {
         <Return onClick={this.onReturnMoney} />
       </div>
     );
-  }
-}
-
-const Header = () => <h1 className="vedingMachine__title">Vending Machine</h1>
-
-class List extends Component {
-  render() {
-    const { list, onClick } = this.props;
-
-    return (
-      <div>
-        {list.map(item =>
-          <ul key={item.id}>
-            <li
-              onClick={onClick}>{item.name}</li>
-            <li>가격 : {item.price}</li>
-          </ul>
-        )}
-      </div>
-    )
-  }
-}
-
-class Input extends Component {
-  componentDidMount() {
-    this.input.focus();
-  }
-
-  render() {
-    const { value, balance, onChange, onKeyDown } = this.props;
-    return (
-      <div>
-        <span>잔액 : {balance}</span>
-        <input
-          type="text"
-          value={value}
-          onChange={onChange}
-          onKeyDown={onKeyDown}
-          ref={(node) => { this.input = node; }}
-        />
-      </div>
-    )
-  }
-}
-
-class Insert extends Component {
-  render() {
-    const { onClick } = this.props;
-    return (
-      <div>
-        <button
-          onClick={onClick}
-          type="button"
-        >
-          Insert Money
-          </button>
-      </div>
-    )
-  }
-}
-
-class Return extends Component {
-  render() {
-    const { onClick } = this.props;
-    return (
-      <div>
-        <button
-          onClick={onClick}
-          type="button"
-        >
-          Return Money
-        </button>
-      </div>
-    )
   }
 }
 
