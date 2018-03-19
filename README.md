@@ -2,4 +2,6 @@
 
 ## React
 
-## url :
+## url : https://shldhee.github.io/VendingMachine/
+
+![VendingMachine](./index.png)

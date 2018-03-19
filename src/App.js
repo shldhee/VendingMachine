@@ -9,25 +9,25 @@ import Return from './components/Return';
 const list = [
   {
     id: 1,
-    name: 'Sprite',
+    name: 'RedBull',
     price: 800,
-    img: "be1.png"
+    img: "./images/be1.png"
   },
   {
     id: 2,
-    name: 'Coke',
+    name: 'Monster',
     price: 900,
-    img: "http://localhost:3000/images/be2.png"
+    img: "./images/be2.png"
   },
   {
     id: 3,
-    name: 'Coffee',
+    name: 'Fanta',
     price: 1000,
-    img: "../images/be3.png"
+    img: "./images/be3.png"
   },
   {
     id: 4,
-    name: 'Water',
+    name: 'Coke',
     price: 700,
     img: "./images/be4.png"
   }
