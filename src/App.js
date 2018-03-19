@@ -11,25 +11,25 @@ const list = [
     id: 1,
     name: 'Sprite',
     price: 800,
-    img: "http://placehold.it/80X150/cd2"
+    img: "be1.png"
   },
   {
     id: 2,
     name: 'Coke',
     price: 900,
-    img: "http://placehold.it/80X150/f8a"
+    img: "http://localhost:3000/images/be2.png"
   },
   {
     id: 3,
     name: 'Coffee',
     price: 1000,
-    img: "http://placehold.it/80X150/860"
+    img: "../images/be3.png"
   },
   {
     id: 4,
     name: 'Water',
     price: 700,
-    img: "http://placehold.it/80X150/324"
+    img: "./images/be4.png"
   }
 ];
 

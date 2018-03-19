@@ -1,0 +1,13 @@
+.vending__return__btn {
+  width: 120px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-left: 145px;
+  padding: 10px 10px;
+  outline: none;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}

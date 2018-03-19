@@ -1,0 +1,11 @@
+.vending__input {
+  outline: none;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 10px 20px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+}

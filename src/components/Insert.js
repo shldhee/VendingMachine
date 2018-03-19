@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Insert.css';
 
 class Insert extends Component {
   render() {
@@ -6,6 +7,7 @@ class Insert extends Component {
     return (
       <div>
         <button
+          className="vending__insert__btn"
           onClick={onClick}
           type="button"
         >

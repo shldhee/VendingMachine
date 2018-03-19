@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './Return';
+import './Return.css';
 
 class Return extends Component {
   render() {
@@ -7,6 +7,7 @@ class Return extends Component {
     return (
       <div>
         <button
+          className="vending__return__btn"
           onClick={onClick}
           type="button"
         >

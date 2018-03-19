@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './List.css';
-
 class List extends Component {
   render() {
     const { list, onClick } = this.props;
@@ -11,7 +10,7 @@ class List extends Component {
           <li className="vending__item" key={item.id}>
             <img src={item.img} alt="" />
             <span className="beverage__item" onClick={onClick}>{item.name}</span>
-            <span>{item.price} 원</span>
+            <span className="beverage__price">{item.price} 원</span>
           </li>
         )}
       </ul>

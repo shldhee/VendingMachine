@@ -1,6 +1,7 @@
 .vending__list {
-  padding: 50px 0;
   width: 200px;
+  margin: 0 auto;
+  padding: 50px 0 0;
 }
 
 .vending__list:after {
@@ -12,11 +13,43 @@
 .vending__item {
   float: left;
   width: 90px;
-  text-align: center;
+  min-height: 240px;
+  margin-right: 10px;
   padding-top: 20px;
+  text-align: center;
 }
 
 .beverage__item {
+  padding: 4px;
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
   display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
 }
 
+.beverage__item:active {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.beverage__item:active {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.beverage__price {
+  display: block;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.beverage__item:active+.beverage__price {
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+}

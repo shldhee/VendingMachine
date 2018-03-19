@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './Input';
+import './Input.css';
 
 class Input extends Component {
   componentDidMount() {
@@ -12,6 +12,7 @@ class Input extends Component {
       <div>
         <span>잔액 : {balance} 원</span><br />
         <input
+          className="vending__input"
           type="text"
           value={value}
           onChange={onChange}
