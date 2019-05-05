@@ -15,5 +15,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage" : "http://shldhee.github.io/VendingMachine"
+  "homepage": "http://shldhee.github.io/VendingMachine"
 }
